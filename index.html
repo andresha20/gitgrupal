@@ -5,10 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto colaborativo</title>
+    <link rel="stylesheet" href="/assets/CSS/style.css"
 </head>
 <body>
-    <article>
-        <h1>Contenido inicial</h1>
+    <article class="main">
+        <ul>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+        <section>
+            <h1 id="table">Table</h1>
+            <table>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Black</td>
+                    <td>Vaccine</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Nabil</td>
+                    <td>Ahmed</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h1 id="form">Form</h1>
+            <section class="formcarry-container">
+                <form action="#" method="POST" enctype="multipart/form-data">
+                  <div class="formcarry-block">
+                    <label for="fc-generated-1-name">Full Name</label>
+                    <input type="text" name="name" id="fc-generated-1-name" placeholder="Your first and last name" />
+                  </div>
+                  <div class="formcarry-block">
+                    <label for="fc-generated-1-email">Your Email Address</label>
+                    <input type="email" name="email" id="fc-generated-1-email" placeholder="john@doe.com" />
+                  </div>
+                  <div class="formcarry-block">
+                    <label for="fc-generated-1-message">Your message</label>
+                    <textarea name="message" name="message" id="fc-generated-1-message" placeholder="Enter your message..."></textarea>
+                  </div>
+                  <div class="formcarry-block">  
+                    <button type="submit">Send</button>
+                  </div>
+                </form>
+              </section>
+        </section>
     </article>
 </body>
 </html>
